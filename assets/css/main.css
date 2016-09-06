@@ -71,7 +71,7 @@ body {
 	font-family: 'Shrikhand', cursive;
 
 	/*font-size: 400%;*/
-	font-size: 5.5vw;
+	font-size: 5.8vw;
 	/*font-size: 1800%;*/
 	font-weight: bold;
 }
@@ -92,6 +92,10 @@ ul.icons li a {
     font-size: 30px;
     /*font-family: 'Shrikhand', cursive;*/
     font-weight: bold;
+}
+
+ul.icons li a:hover {
+  color: #000;
 }
 
 ul.icons {
@@ -133,13 +137,16 @@ ul.topnav li a {
     padding: 14px 16px;
     text-decoration: none;
     transition: 0.3s;
-    font-size: 20px;
+    font-size: 25px;
     font-family: 'Shrikhand', cursive;
     font-weight: bold;
 }
 
 /* Change background color of links on hover */
-ul.topnav li a:hover {background-color: #555;}
+ul.topnav li a:hover {
+  color: #000;
+  text-decoration: underline;
+}
 
 /* Hide the list item that contains the link that should open and close the topnav on small screens */
 ul.topnav li.icon {display: none;}
