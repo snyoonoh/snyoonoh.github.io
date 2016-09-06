@@ -1,0 +1,175 @@
+@import url(font-awesome.min.css);
+
+/*$black: #30332E;
+$yellow: #FFC857;
+$white: #EFF1F3;*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	max-width: 100%; 
+	height: 100%;
+	overflow-x: hidden;
+	background-color: #FFC857;
+}  
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#mid_text {
+	color: #30332E;
+	font-family: 'Shrikhand', cursive;
+
+	/*font-size: 400%;*/
+	font-size: 5.5vw;
+	/*font-size: 1800%;*/
+	font-weight: bold;
+}
+
+ul.icons li {
+	float: left;
+	text-decoration: none;
+	border-bottom: none;
+}
+
+ul.icons li a {
+	display: inline-block;
+    color: #30332E;
+    /*text-align: center;*/
+    padding: 14px 16px;
+    text-decoration: none;
+    /*transition: 0.3s;*/
+    font-size: 30px;
+    /*font-family: 'Shrikhand', cursive;*/
+    font-weight: bold;
+}
+
+ul.icons {
+	margin: 0;
+	padding: 0;
+}
+
+#footer {
+			/*padding: 6em 0 4em 0 ;*/
+    /*background: silver;*/
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 12%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-116px);
+    /*transform: translate(-50%, -50%);*/
+
+
+}
+/* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /*background-color: #333;*/
+}
+
+/* Float the list items side by side */
+ul.topnav li {float: left;}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #30332E;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 20px;
+    font-family: 'Shrikhand', cursive;
+    font-weight: bold;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #555;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+
