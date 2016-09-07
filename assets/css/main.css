@@ -71,10 +71,15 @@ body {
 	font-family: 'Shrikhand', cursive;
 
 	/*font-size: 400%;*/
-	font-size: 5.8vw;
+	font-size: 6vw;
 	/*font-size: 1800%;*/
 	font-weight: bold;
 }
+
+/*#mid_text : hover{
+  color: #000;
+  font-size: 5.9vw;
+}*/
 
 ul.icons li {
 	float: left;
@@ -96,6 +101,7 @@ ul.icons li a {
 
 ul.icons li a:hover {
   color: #000;
+  font-size : 32px;
 }
 
 ul.icons {
@@ -145,11 +151,15 @@ ul.topnav li a {
 /* Change background color of links on hover */
 ul.topnav li a:hover {
   color: #000;
-  text-decoration: underline;
+  font-size: 28px;
+  /*pointer-events: none;*/
+  /*text-decoration: underline;*/
 }
 
 /* Hide the list item that contains the link that should open and close the topnav on small screens */
-ul.topnav li.icon {display: none;}
+ul.topnav li.icon {
+  display: none;
+}
 
 
 /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
