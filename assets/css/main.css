@@ -52,12 +52,49 @@ table {
 	border-spacing: 0;
 }
 
-body {
+body{
 	max-width: 100%; 
 	height: 100%;
 	overflow-x: hidden;
 	background-color: #FFC857;
 }  
+
+#about p {
+  text-align: center;
+  padding-top: 60px;
+  font-family: 'Open Sans', sans-serif;
+  /*font-family: 'Monaco', 'Courier New';*/
+  letter-spacing: 0.6em;
+  font-weight: bold;
+  color: #30332E;
+  font-size: 16px;
+  text-transform: uppercase;
+
+}
+
+#code {
+/*  margin-top:150px;*/
+  border-radius: 5px;
+  width:800px;
+  margin: 0 auto;
+  padding-top:15px;
+  font-size:30px;
+  background: #ccc;
+  height: 700px;
+  font-family: 'Monaco', 'Courier New';
+  text-align: left;
+  font-size:13px;
+  color: #fafafa;
+}
+
+#console {
+  width:720px;
+  padding: 40px;
+  height: 620px;
+  margin:0 auto;
+  background: #383737;
+}
+
 
 .center {
   position: absolute;
@@ -154,7 +191,8 @@ ul.topnav li a {
 /* Change background color of links on hover */
 ul.topnav li a:hover {
   color: #000;
-  font-size: 28px;
+  -webkit-transform: scale(1.1);
+  /*font-size: 28px;*/
   /*pointer-events: none;*/
   /*text-decoration: underline;*/
 }
