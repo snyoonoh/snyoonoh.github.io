@@ -1,13 +1,5 @@
 @import url(font-awesome.min.css);
 
-/*$black: #30332E;
-$yellow: #FFC857;
-$white: #EFF1F3;*/
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,88 +13,80 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+  content: '';
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-body{
-	max-width: 100%; 
-	height: 100%;
-	overflow-x: hidden;
-	background-color: #FFC857;
+body#homepage{
+  max-width: 100%; 
+  height: 100%;
+  overflow-x: hidden;
+  background-color: #FFC857;
 }  
 
-#about p {
-  text-align: center;
-  padding-top: 60px;
-  font-family: 'Open Sans', sans-serif;
-  /*font-family: 'Monaco', 'Courier New';*/
-  letter-spacing: 0.6em;
-  font-weight: bold;
-  color: #30332E;
-  font-size: 16px;
-  text-transform: uppercase;
+body#about-me{
+  max-width: 100%; 
+  overflow-x: hidden;
+  background-color: #FFC857;
+  height: 100vh;
+}  
+
+#terminal {
+  font: bold 16px "Lato", arial, sans-serif;
+    -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+   display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font: bold 16px "Lato", arial, sans-serif;
+  padding-top: 20px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 
 }
 
-#code {
-/*  margin-top:150px;*/
-  border-radius: 5px;
-  width:800px;
-  margin: 0 auto;
-  padding-top:15px;
-  font-size:30px;
-  background: #ccc;
-  height: 700px;
-  font-family: 'Monaco', 'Courier New';
-  text-align: left;
-  font-size:13px;
-  color: #fafafa;
+.header {
+  padding: none;
 }
-
-#console {
-  width:720px;
-  padding: 40px;
-  height: 620px;
-  margin:0 auto;
-  background: #383737;
-}
-
 
 .center {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-    /*background-image:  url(https://static.pexels.com/photos/34107/milky-way-stars-night-sky.jpg);*/
-    background-image:  url("../images/nature.jpeg");
+  background-image:  url("../images/nature.jpeg");
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   color:  #FFFFFF;
@@ -120,75 +104,54 @@ body{
   }
 }
 
-/*.container-text {
-  background-image:  url(https://static.pexels.com/photos/4827/nature-forest-trees-fog.jpeg);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  color:  #FFFFFF;
-  padding-top: 20px;
-  font-size: 170px;
-  font-family: 'Bungee', cursive;
-  animation: filling 3s ease forwards;
-}*/
-
 #mid_text {
-	/*color: #30332E;*/
-	font-family: 'Shrikhand', cursive;
-	font-size: 14vw;
-  /*font-size: 200px;*/
-	font-weight: bold;
+  font-family: 'Shrikhand', cursive;
+  font-size: 14vw;
+  font-weight: bold;
 }
 
 
 ul.icons li {
-	float: left;
-	text-decoration: none;
-	border-bottom: none;
+  float: left;
+  text-decoration: none;
+  border-bottom: none;
 }
 
 ul.icons li a {
-	display: inline-block;
+  display: inline-block;
     color: #30332E;
-    /*text-align: center;*/
     padding: 14px 16px;
     text-decoration: none;
-    /*transition: 0.3s;*/
     font-size: 30px;
-    /*font-family: 'Shrikhand', cursive;*/
     font-weight: bold;
 }
 
-ul.icons li a:hover {
+html.non-touch ul.icons li a:hover {
   color: #000;
   font-size : 32px;
 }
 
 ul.icons {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 #footer {
-			/*padding: 6em 0 4em 0 ;*/
-    /*background: silver;*/
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 12%;
-    text-align: center;
-    left: 50%;
-    transform: translateX(-116px);
-    /*transform: translate(-50%, -50%);*/
-
-
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 12%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-116px);
 }
+
 /* Remove margins and padding from the list, and add a black background color */
 ul.topnav {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    /*background-color: #333;*/
 }
 
 /* Float the list items side by side */
@@ -205,15 +168,13 @@ ul.topnav li a {
     font-size: 25px;
     font-family: 'Shrikhand', cursive;
     font-weight: bold;
+
 }
 
 /* Change background color of links on hover */
-ul.topnav li a:hover {
+html.non-touch ul.topnav li a:hover {
   color: #000;
   -webkit-transform: scale(1.1);
-  /*font-size: 28px;*/
-  /*pointer-events: none;*/
-  /*text-decoration: underline;*/
 }
 
 /* Hide the list item that contains the link that should open and close the topnav on small screens */
@@ -229,6 +190,54 @@ ul.topnav li.icon {
     float: right;
     display: inline-block;
   }
+}
+
+
+.window {
+  background: #ddd;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 880px;
+}
+
+.title {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  padding: 0.75em;
+}
+
+.button-icons {
+  padding: 0.75em;
+  position: absolute;
+}
+.button-icons span {
+  background: #f4c025;
+}
+.button-icons:before {
+  content: "";
+  background: #e4514f;
+}
+.button-icons:after {
+  content: "";
+  background: #3ec930;
+}
+
+.button-icons span, .button-icons:before, .button-icons:after {
+  display: inline-block;
+  float: left;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  margin-right: 0.5em;
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
@@ -248,5 +257,79 @@ ul.topnav li.icon {
     text-align: left;
   }
 }
+
+pre {
+  background: #222;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: #fff;
+  overflow: scroll;
+  padding: 2.5em;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+
+}
+pre code {
+  font: bold 1em/1.75 "Source Code Pro", monospace;
+}
+pre code:after {
+  -webkit-animation: blink 0.9s infinite;
+          animation: blink 0.9s infinite;
+  display: block;
+  opacity: 1;
+  content: "▋";
+}
+
+.token.punctuation {
+  color: #999;
+}
+
+.token.boolean,
+.token.number {
+  color: #8130c9;
+}
+
+.token.keyword {
+  color: #09a3d5;
+}
+
+.token.operator {
+  color: #e4514f;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media(max-width: 800px) {
+  pre {
+    font-size: 10px;
+  }
+
+  .window {
+    width: 70%;
+
+  }
+}
+
 
 
