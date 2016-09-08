@@ -158,7 +158,7 @@ ul.icons li a {
     font-weight: bold;
 }
 
-html.non-touch ul.icons li a:hover {
+ul.icons li a:hover {
   color: #000;
   font-size : 32px;
 }
@@ -208,7 +208,7 @@ ul.topnav li a {
 }
 
 /* Change background color of links on hover */
-html.non-touch ul.topnav li a:hover {
+ul.topnav li a:hover {
   color: #000;
   -webkit-transform: scale(1.1);
   /*font-size: 28px;*/
