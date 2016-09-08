@@ -101,7 +101,8 @@ body{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image:  url("../images/nature.jpeg");
+    /*background-image:  url(https://static.pexels.com/photos/34107/milky-way-stars-night-sky.jpg);*/
+    background-image:  url("../images/nature.jpeg");
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   color:  #FFFFFF;
@@ -119,9 +120,22 @@ body{
   }
 }
 
+/*.container-text {
+  background-image:  url(https://static.pexels.com/photos/4827/nature-forest-trees-fog.jpeg);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  color:  #FFFFFF;
+  padding-top: 20px;
+  font-size: 170px;
+  font-family: 'Bungee', cursive;
+  animation: filling 3s ease forwards;
+}*/
+
 #mid_text {
+	/*color: #30332E;*/
 	font-family: 'Shrikhand', cursive;
 	font-size: 14vw;
+  /*font-size: 200px;*/
 	font-weight: bold;
 }
 
@@ -135,9 +149,12 @@ ul.icons li {
 ul.icons li a {
 	display: inline-block;
     color: #30332E;
+    /*text-align: center;*/
     padding: 14px 16px;
     text-decoration: none;
+    /*transition: 0.3s;*/
     font-size: 30px;
+    /*font-family: 'Shrikhand', cursive;*/
     font-weight: bold;
 }
 
@@ -152,15 +169,16 @@ ul.icons {
 }
 
 #footer {
-
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 12%;
-  text-align: center;
-  left: 50%;
-  transform: translateX(-116px);
-
+			/*padding: 6em 0 4em 0 ;*/
+    /*background: silver;*/
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 12%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-116px);
+    /*transform: translate(-50%, -50%);*/
 
 
 }
@@ -170,6 +188,7 @@ ul.topnav {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    /*background-color: #333;*/
 }
 
 /* Float the list items side by side */
