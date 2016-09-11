@@ -81,35 +81,90 @@ body#about-me{
   padding: none;
 }
 
-.center {
+/*===================Main page text animation=========================*/
+
+.svg-inverted-mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.mask__shape {
+  fill: white;
+}
+
+.box-with-text {
+  /*padding-top: 50px;*/
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* Visible fill of text */
+.text-fill {
   position: absolute;
   top: 50%;
   left: 50%;
+  padding-top: 35vw;
+  padding-left: 100%;
+  margin: auto;
+  overflow: hidden;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  background-image: -webkit-linear-gradient(transparent, transparent),
-                    url("../images/nature.jpeg");
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  color:  #FFFFFF;
-  padding-top: 20px;
-  font-size: 170px;
-  animation: filling 3s ease forwards;
+  background: url(../images/nature-min.jpeg) 50% 50%/cover;
+  animation: filling 2s ease forwards;
 }
+
+  
+
 
 @keyframes filling {
   from{
-    background-position: center 25%;
+    background-position: center 15%;
   }
   to {
-    background-position: center 70%;
+    background-position: center 95%;
   }
 }
 
-#mid_text {
-  font-family: 'Shrikhand', cursive;
-  font-size: 14vw;
-  font-weight: bold;
+/* Fill of inverted mask */
+.shape--fill {
+  fill: #FFC857;
+
 }
+
+/* Transparent copy of text to keep
+patterned text selectable */
+.text--transparent {
+  fill: transparent;
+}
+
+@media (min-aspect-ratio: 2 / 1) {
+  .text-fill {
+    padding-top: 70vh;
+    padding-left: 190vh;
+  }
+}
+
+#main-text {
+  font-family: 'Shrikhand', cursive;
+  font-size: 90px;
+  font-weight: bold;
+  text-transform: uppercase;
+  max-width: 100;
+  height: auto;
+  width: auto;
+}
+
+.svg-defs {
+  width: 0;
+  height: 0;
+}
+
+/*====================================================*/
 
 
 ul.icons li {
@@ -156,12 +211,17 @@ ul.topnav {
     padding: 0;
     overflow: hidden;
 }
+ul#myTopnavHome.topnav {
+    z-index: 1;
+    position: absolute;
+}
 
 /* Float the list items side by side */
 ul.topnav li {float: left;}
 
 /* Style the links inside the list items */
 ul.topnav li a {
+    /*position : absolute;*/
     display: inline-block;
     color: #30332E;
     text-align: center;
