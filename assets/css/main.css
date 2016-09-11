@@ -86,7 +86,8 @@ body#about-me{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image:  url("../images/nature.jpeg");
+  background-image: -webkit-linear-gradient(transparent, transparent),
+                    url("../images/nature.jpeg");
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   color:  #FFFFFF;
@@ -128,7 +129,9 @@ ul.icons li a {
 
 html.non-touch ul.icons li a:hover {
   color: #000;
-  font-size : 32px;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  /*font-size : 32px;*/
 }
 
 ul.icons {
@@ -175,6 +178,7 @@ ul.topnav li a {
 html.non-touch ul.topnav li a:hover {
   color: #000;
   -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
 }
 
 /* Hide the list item that contains the link that should open and close the topnav on small screens */
