@@ -8,6 +8,15 @@ function myFunction() {
     }
 }
 
+function myFunctionHome() {
+    var x = document.getElementById("myTopnavHome");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+
 var touchsupport = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0)
 if (!touchsupport){ // browser doesn't support touch
     document.documentElement.className += " non-touch"
