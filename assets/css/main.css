@@ -125,7 +125,6 @@ body#portfolio{
   background: url(../images/nature-min.jpeg) 50% 50%/cover;
   /*animation-timing-function: ease-in-out;*/
   animation: filling 1.8s ease forwards;
-
 }
 
 @keyframes filling {
@@ -7192,5 +7191,35 @@ pre code:after {
 
 
 
+ul.icons-portfolio li {
+  float: left;
+  text-decoration: none;
+  border-bottom: none;
+}
 
+ul.icons-portfolio li a {
+  display: inline-block;
+    color: #000;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    /*font-weight: bold;*/
+}
+
+html.non-touch ul.icons-portfolio li a:hover {
+  color: #000;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  /*font-size : 32px;*/
+}
+
+ul.icons-portfolio {
+  margin: 0;
+  padding: 0;
+}
+
+.icons-port{
+  /*text-align: center;*/
+  left-padding: 10px;
+}
 
