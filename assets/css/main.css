@@ -7223,9 +7223,9 @@ ul.icons-portfolio {
   left-padding: 10px;
 }
 
-/* random */
+/* art */
 
-body#random {
+body#art {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -7384,6 +7384,221 @@ a.slide_btn {
 
 #slider_1{
   padding-top:20px;
+  height: 400px;
 }
+
+/*  slider_2    */
+
+.slider_2 {
+  margin: 0 auto;
+  max-width: 940px;
+}
+
+.slide_viewer_2 {
+  height: 550px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide_group_2 {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.slide_2 {
+  display: none;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+
+}
+
+.slide_2:first-child {
+  display: block;
+
+}
+
+.slide_2:nth-of-type(1) {
+  background: url(../art-proj-images/circles/1-min.jpeg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:center;
+
+}
+
+.slide_2:nth-of-type(2) {
+  background: url(../art-proj-images/circles/3-min.jpeg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:center;
+}
+
+.slide_2:nth-of-type(3) {
+  background: url(../art-proj-images/circles/4-min.jpeg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:center;
+}
+
+.slide_2:nth-of-type(4) {
+  background: url(../art-proj-images/circles/5-min.jpeg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:center;
+}
+
+.slide_2:nth-of-type(5) {
+  background: url(../art-proj-images/circles/6-min.jpeg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:center;
+}
+.slide_2:nth-of-type(6) {
+  background: url(../art-proj-images/circles/7-min.jpeg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:center;
+}
+.slide_2:nth-of-type(7) {
+  background: url(../art-proj-images/circles/8-min.jpeg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:center;
+}
+.slide_2:nth-of-type(8) {
+  background: url(../art-proj-images/circles/10-min.jpeg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:center;
+}
+.slide_2:nth-of-type(9) {
+  background: url(../art-proj-images/circles/11-min.jpeg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:center;
+}
+.slide_2:nth-of-type(10) {
+  background: url(../art-proj-images/circles/12-min.jpeg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:center;
+}
+.slide_2:nth-of-type(11) {
+  background: url(../art-proj-images/circles/13-min.jpeg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:center;
+}
+.slide_2:nth-of-type(12) {
+  background: url(../art-proj-images/circles/14-min.jpeg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:center;
+}
+.slide_2:nth-of-type(13) {
+  background: url(../art-proj-images/circles/16-min.jpeg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:center;
+}
+.slide_2:nth-of-type(14) {
+  background: url(../art-proj-images/circles/18-min.jpeg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:center;
+}
+.slide_2:nth-of-type(15) {
+  background: url(../art-proj-images/circles/20-min.jpeg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:center;
+}
+.slide_2:nth-of-type(16) {
+  background: url(../art-proj-images/circles/21-min.jpeg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:center;
+}
+.slide_2:nth-of-type(17) {
+  background: url(../art-proj-images/circles/22-min.jpeg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:center;
+}
+.slide_2:nth-of-type(18) {
+  background: url(../art-proj-images/circles/23-min.jpeg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:center;
+}
+.slide_2:nth-of-type(19) {
+  background: url(../art-proj-images/circles/24-min.jpeg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:center;
+}
+.slide_2:nth-of-type(20) {
+  background: url(../art-proj-images/circles/25-min.jpeg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:center;
+}
+
+
+.directional_nav_2 {
+  height: 340px;
+  margin: 0 auto;
+  max-width: 940px;
+  position: relative;
+  top: -340px;
+}
+
+.previous_btn_2 {
+  bottom: 0;
+  left: 100px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+}
+
+.next_btn_2 {
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  right: 100px;
+  top: 0;
+}
+
+.previous_btn_2, .next_btn_2 {
+  cursor: pointer;
+  height: 65px;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -ms-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+  width: 65px;
+}
+
+.previous_btn_2:hover, .next_btn_2:hover {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 767px) {
+  .previous_btn_2 {
+    left: 50px;
+  }
+  .next_btn_2 {
+    right: 50px;
+  }
+}
+
+#slider_2_box{
+  padding-top:0px;
+  height: 50px;
+}
+
 
 
